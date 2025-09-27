@@ -1,0 +1,53 @@
+{
+  "name": "GameState",
+  "type": "object",
+  "properties": {
+    "player_name": {
+      "type": "string",
+      "description": "Name of the ruler"
+    },
+    "population": {
+      "type": "number",
+      "default": 100,
+      "description": "Kingdom population"
+    },
+    "food": {
+      "type": "number",
+      "default": 100,
+      "description": "Food reserves"
+    },
+    "gold": {
+      "type": "number",
+      "default": 100,
+      "description": "Treasury gold"
+    },
+    "military": {
+      "type": "number",
+      "default": 100,
+      "description": "Military strength"
+    },
+    "year": {
+      "type": "number",
+      "default": 1,
+      "description": "Current year of rule"
+    },
+    "events_survived": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of events survived"
+    },
+    "is_game_over": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the game has ended"
+    },
+    "final_score": {
+      "type": "number",
+      "default": 0,
+      "description": "Final game score"
+    }
+  },
+  "required": [
+    "player_name"
+  ]
+}
